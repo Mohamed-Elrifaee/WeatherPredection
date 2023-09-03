@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geolocation Example</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Weather Predictor 🌤️</h1>
+    <button id="getLocationBtn" class="btn btn-primary mt-3">Get Location</button>
+    <div id="locationDetails" class="mt-3">
+      <p>Latitude: <span id="latitude"></span></p>
+      <p>Longitude: <span id="longitude"></span></p>
+    </div>
+  </div>
+
+  <div id="map" class="mt-5 custom-container"></div>
+
+  <hr class="mt-5">
+  <div class="container">
+    <h1>Weather Information</h1>
+    <div id="weather-description"></div>
+    <img id="weather-icon" src="" alt="Weather Icon" class="mt-3 custom-weather-icon">
+
+    <style>
+    .custom-weather-icon {
+      background-color: #c3d3e2; /* Set a custom background color */
+      padding: 5px; /* Add padding for spacing */
+      border-radius: 5px; /* Add rounded corners */
+    }
+    </style>  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script/script.js"></script>
+</body>
+</html>
