@@ -3,7 +3,7 @@ import axios from "axios";
 import bodyParser from "body-parser";
 
 const app = express();
-const weatherAppKey = "d9799ed91d74d2a403741f1052d0c408";
+const weatherAppKey = ; // Write your key in here you can get it just by logging in to the openweathermap and get a key :D
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
